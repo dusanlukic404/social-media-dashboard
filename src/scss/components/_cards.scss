@@ -1,0 +1,62 @@
+@use "../abstract/" as *;
+
+.overview__top {
+  .card {
+    position: relative;
+    text-align: center;
+    background-color: var(--card-background);
+    border-radius: 0.65rem;
+    padding-block: 3.7rem 2.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 400ms ease;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
+    }
+
+    &:hover {
+      background-color: var(--card-hover);
+    }
+
+    .user,
+    .today-stats {
+      display: flex;
+      align-items: center;
+    }
+
+    .user {
+      gap: 1rem;
+    }
+
+    .today-stats {
+      gap: 0.3rem;
+    }
+  }
+
+  .card--facebook::before {
+    background-color: $clr-facebook;
+  }
+
+  .card--twitter::before {
+    background-color: $clr-twitter;
+  }
+
+  .card--instagram::before {
+    background-image: $clr-instagram;
+  }
+
+  .card--youtube::before {
+    background-color: $clr-youtube;
+  }
+}

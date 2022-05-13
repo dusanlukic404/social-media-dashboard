@@ -1,0 +1,30 @@
+@use "../abstract/" as *;
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.theme__btn {
+  position: relative;
+  width: 5.5rem;
+  background-color: var(--toggle);
+  background-image: var(--toggle);
+  border-radius: 100rem;
+  padding: 0.35rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+
+  &:hover {
+    background-image: orangered;
+  }
+
+  .toggler {
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background-color: var(--pattern);
+    transform: translateX(130%);
+  }
+}

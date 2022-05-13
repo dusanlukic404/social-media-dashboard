@@ -1,0 +1,13 @@
+@use "../abstract/colors" as *;
+
+header {
+  width: 100%;
+  background-color: var(--pattern);
+  padding-block: 4rem 14rem;
+}
+
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

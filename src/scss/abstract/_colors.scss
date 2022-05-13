@@ -1,0 +1,60 @@
+// Up and down arrow colors
+$clr-lime-green: hsl(163, 72%, 41%);
+$clr-bright-red: hsl(356, 69%, 56%);
+
+// Social media colors
+$clr-facebook: hsl(208, 92%, 53%);
+$clr-twitter: hsl(203, 89%, 53%);
+$clr-instagram: linear-gradient(
+  to right,
+  hsl(37, 97%, 70%),
+  hsl(329, 70%, 58%)
+);
+$clr-youtube: hsl(348, 97%, 39%);
+
+:root {
+  --toggle-dark: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --toggle-light: hsl(230, 22%, 74%);
+
+  // card hover
+  --card-hover-light: hsl(232, 33%, 91%);
+  --card-hover-dark: hsl(228, 26%, 27%);
+
+  // dark theme
+  --background-dark: hsl(230, 17%, 14%);
+  --pattern-dark: hsl(232, 19%, 15%);
+  --card-background-dark: hsl(228, 28%, 20%);
+  --grayish-text-dark: hsl(228, 34%, 66%);
+  --bright-text-dark: hsl(0, 0%, 100%);
+
+  //light theme
+  --background-light: hsl(0, 0%, 100%);
+  --pattern-light: hsl(225, 100%, 98%);
+  --card-background-light: hsl(227, 47%, 96%);
+  --grayish-text-light: hsl(228, 12%, 44%);
+  --bright-text-light: hsl(230, 17%, 14);
+}
+
+html[color-scheme="light"] {
+  --card-hover: var(--card-hover-light);
+  --toggle: var(--toggle-light);
+  --background: var(--background-light);
+  --pattern: var(--pattern-light);
+  --card-background: var(--card-background-light);
+  --grayish-text: var(--grayish-text-light);
+  --brighter-text: var(--bright-text-light);
+}
+
+html[color-scheme="dark"] {
+  --card-hover: var(--card-hover-dark);
+  --toggle: var(--toggle-dark);
+  --background: var(--background-dark);
+  --pattern: var(--pattern-dark);
+  --card-background: var(--card-background-dark);
+  --grayish-text: var(--grayish-text-dark);
+  --brighter-text: var(--bright-text-dark);
+}

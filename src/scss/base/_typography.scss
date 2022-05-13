@@ -1,0 +1,58 @@
+@use "../abstract/" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.title__main {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--brighter-text);
+}
+
+.title__subtitle,
+.theme__name {
+  font-size: 1.4rem;
+  color: var(--grayish-text);
+}
+
+.theme__name {
+  font-weight: 700;
+}
+
+.user__name {
+  color: var(--grayish-text);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.info__number {
+  color: var(--brighter-text);
+  font-weight: 700;
+  line-height: 1;
+  font-size: 5.5rem;
+}
+
+.info__followers {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--grayish-text);
+}
+
+.today-stats__text {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.today-stats__text--green {
+  color: $clr-lime-green;
+}
+
+.today-stats__text--red {
+  color: $clr-bright-red;
+}
