@@ -9,14 +9,18 @@ body {
 }
 
 .title__main {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4.5vw + 0.5rem, 2.5rem);
   line-height: 1.1;
-  color: var(--brighter-text);
+  color: var(--heading);
+
+  @include small {
+    padding-bottom: 0.3rem;
+  }
 }
 
 .title__subtitle,
 .theme__name {
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 2vw + 1rem, 1.4rem);
   color: var(--grayish-text);
 }
 
@@ -24,23 +28,24 @@ body {
   font-weight: 700;
 }
 
-.user__name {
+.user__name,
+.activity {
   color: var(--grayish-text);
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: clamp(0.95rem, 2vw + 1rem, 1.3rem);
 }
 
 .info__number {
-  color: var(--brighter-text);
+  color: var(--heading);
   font-weight: 700;
   line-height: 1;
-  font-size: 5.5rem;
+  font-size: clamp(5rem, 6vw + 1rem, 5.5rem);
 }
 
 .info__followers {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  font-size: 1.3rem;
+  font-size: clamp(0.95rem, 3vw + 1rem, 1.3rem);
   color: var(--grayish-text);
 }
 
@@ -55,4 +60,18 @@ body {
 
 .today-stats__text--red {
   color: $clr-bright-red;
+}
+
+// Overview - today stats
+.secondary-title {
+  font-size: clamp(2rem, 4vw + 1rem, 2.35rem);
+  color: var(--overview-today);
+  padding-block: 3.5rem 2rem;
+}
+
+.stats-number {
+  color: var(--heading);
+  font-weight: 700;
+  font-size: clamp(2.8rem, 4vw + 1rem, 3.75rem);
+  line-height: 1;
 }
