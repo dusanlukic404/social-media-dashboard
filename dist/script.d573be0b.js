@@ -124,7 +124,7 @@ window.addEventListener("load", function () {
   if (selectedTheme === "dark" || window.matchMedia("(prefers-color-scheme: dark)").matches) {
     document.querySelector(".toggler").classList.toggle("toggler--active");
     document.documentElement.setAttribute("color-scheme", "dark");
-  } else if (selectedTheme === "light") {
+  } else {
     document.documentElement.setAttribute("color-scheme", "light");
   }
 });
@@ -171,7 +171,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52759" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64339" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
