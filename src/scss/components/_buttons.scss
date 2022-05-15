@@ -41,5 +41,10 @@
     border-radius: 50%;
     background-color: var(--pattern);
     transform: translateX(130%);
+    transition: all 400ms ease;
+
+    &.toggler--active {
+      transform: translateX(0);
+    }
   }
 }
