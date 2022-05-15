@@ -1,9 +1,17 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
 
 .theme {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+
+  @include small {
+    width: 100%;
+    padding-top: 2rem;
+    justify-content: space-between;
+    border-top: 2px solid var(--grayish-text);
+  }
 }
 
 .theme__btn {
@@ -14,10 +22,17 @@
   border-radius: 100rem;
   padding: 0.35rem;
   cursor: pointer;
+
   transition: all 400ms ease;
 
   &:hover {
-    background-image: orangered;
+    background-image: linear-gradient(
+      to right,
+      hsl(210, 78%, 56%),
+      hsl(146, 68%, 55%)
+    );
+    background-position: right;
+    background-size: 100%;
   }
 
   .toggler {
