@@ -46,7 +46,8 @@ html[color-scheme="light"] {
   --pattern: var(--pattern-light);
   --card-background: var(--card-background-light);
   --grayish-text: var(--grayish-text-light);
-  --brighter-text: var(--bright-text-light);
+  --heading: var(--bright-text-light);
+  --overview-today: var(--grayish-text-light);
 }
 
 html[color-scheme="dark"] {
@@ -56,5 +57,6 @@ html[color-scheme="dark"] {
   --pattern: var(--pattern-dark);
   --card-background: var(--card-background-dark);
   --grayish-text: var(--grayish-text-dark);
-  --brighter-text: var(--bright-text-dark);
+  --heading: var(--bright-text-dark);
+  --overview-today: var(--bright-text-dark);
 }
