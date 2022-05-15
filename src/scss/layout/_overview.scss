@@ -1,5 +1,9 @@
 @use "../abstract/" as *;
 
+main {
+  background-color: var(--background);
+}
+
 .overview {
   position: relative;
   top: -10.5rem;
@@ -7,6 +11,11 @@
 
 .overview__top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   gap: 2.5rem;
+}
+
+.statistics {
+  @extend .overview__top;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
