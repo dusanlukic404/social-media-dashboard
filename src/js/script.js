@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
     selectedTheme === "dark" ||
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    document.querySelector(".toggler").classList.toggle("toggler--active");
+    document.querySelector(".toggler").classList.add("toggler--active");
     document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
   } else if (
     selectedTheme === "light" &&
