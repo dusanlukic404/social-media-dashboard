@@ -3,16 +3,17 @@ let selectedTheme = localStorage.getItem("theme");
 
 const changeAttribute = function (theme) {
   if (theme === "light") {
+    document.querySelector(".toggler").classList.add("toggler--active");
     document.documentElement.setAttribute("color-scheme", "dark");
     localStorage.setItem("theme", "dark");
   } else {
+    document.querySelector(".toggler").classList.remove("toggler--active");
     document.documentElement.setAttribute("color-scheme", "light");
     localStorage.setItem("theme", "light");
   }
 };
 
 const switchTheme = function () {
-  document.querySelector(".toggler").classList.toggle("toggler--active");
   let theme = document.documentElement.getAttribute("color-scheme");
   changeAttribute(theme);
 };
