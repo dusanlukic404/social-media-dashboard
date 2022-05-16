@@ -28,6 +28,7 @@ window.addEventListener("load", function () {
     selectedTheme === "light" &&
     this.window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
+    document.querySelector(".toggler").classList.remove("toggler--active");
     document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
   } else {
     document.documentElement.setAttribute("color-scheme", "light");
