@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/social-media-dashboard-with-darklight-theme-ry4l7xyPq)
-- Live Site URL: [Add live site URL here](https://social-media-dashboard-challenge.netlify.app)
+- See solution on Frontend Mentor: [Solution](https://www.frontendmentor.io/solutions/social-media-dashboard-with-darklight-theme-ry4l7xyPq)
+- See live on: [Live Site](https://social-media-dashboard-challenge.netlify.app)
 
 ### Built with
 
