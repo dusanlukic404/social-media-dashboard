@@ -23,12 +23,12 @@ window.addEventListener("load", function () {
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.toggle("toggler--active");
-    document.documentElement.setAttribute("color-scheme", "dark");
+    document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
   } else if (
     selectedTheme === "light" &&
     this.window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    document.documentElement.setAttribute("color-scheme", "light");
+    document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
   } else {
     document.documentElement.setAttribute("color-scheme", "light");
   }
