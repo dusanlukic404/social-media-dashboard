@@ -8,6 +8,11 @@ window.addEventListener("load", function () {
   ) {
     document.querySelector(".toggler").classList.toggle("toggler--active");
     document.documentElement.setAttribute("color-scheme", "dark");
+  } else if (
+    selectedTheme === "light" &&
+    this.window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    document.documentElement.setAttribute("color-scheme", "light");
   } else {
     document.documentElement.setAttribute("color-scheme", "light");
   }
