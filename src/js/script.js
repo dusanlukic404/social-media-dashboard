@@ -19,7 +19,7 @@ const switchTheme = function () {
 
 window.addEventListener("load", function () {
   if (
-    selectedTheme === "dark" &&
+    selectedTheme === "dark" ||
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.toggle("toggler--active");
