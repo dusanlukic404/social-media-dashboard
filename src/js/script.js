@@ -19,13 +19,13 @@ window.addEventListener("load", function () {
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.add("toggler--active");
-    document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
+    document.documentElement.setAttribute("color-scheme", "dark");
   } else if (
     selectedTheme === "light" &&
     this.window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.remove("toggler--active");
-    document.documentElement.setAttribute("color-scheme", `${selectedTheme}`);
+    document.documentElement.setAttribute("color-scheme", "light");
   } else {
     document.documentElement.setAttribute("color-scheme", "light");
   }
