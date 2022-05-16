@@ -13,11 +13,6 @@ const changeAttribute = function (theme) {
   }
 };
 
-const switchTheme = function () {
-  let theme = document.documentElement.getAttribute("color-scheme");
-  changeAttribute(theme);
-};
-
 window.addEventListener("load", function () {
   if (
     selectedTheme === "dark" ||
@@ -35,5 +30,10 @@ window.addEventListener("load", function () {
     document.documentElement.setAttribute("color-scheme", "light");
   }
 });
+
+const switchTheme = function () {
+  let theme = document.documentElement.getAttribute("color-scheme");
+  changeAttribute(theme);
+};
 
 themeBtn.addEventListener("click", switchTheme);
