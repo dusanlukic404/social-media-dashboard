@@ -15,17 +15,23 @@ const changeAttribute = function (theme) {
 
 window.addEventListener("load", function () {
   if (
-    selectedTheme === "dark" ||
+    selectedTheme === "dark" &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.add("toggler--active");
     document.documentElement.setAttribute("color-scheme", "dark");
   } else if (
     selectedTheme === "light" &&
-    this.window.matchMedia("(prefers-color-scheme: dark)").matches
+    window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.querySelector(".toggler").classList.remove("toggler--active");
     document.documentElement.setAttribute("color-scheme", "light");
+  } else if (
+    selectedTheme === "dark" &&
+    window.matchMedia("(prefers-color-scheme: light)").matches
+  ) {
+    document.querySelector(".toggler").classList.add("toggler--active");
+    document.documentElement.setAttribute("color-scheme", "dark");
   } else {
     document.documentElement.setAttribute("color-scheme", "light");
   }
