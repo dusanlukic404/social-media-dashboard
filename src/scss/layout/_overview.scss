@@ -1,6 +1,6 @@
 @use "../abstract/" as *;
 
-main {
+main, body {
   background-color: var(--background);
 }
 
